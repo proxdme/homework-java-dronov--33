@@ -5,7 +5,7 @@ public class Main {
         CreditPaymentService service = new CreditPaymentService();
         int loanAmount = 1_000_000;
         double interestRate = 9.99; // в процентах
-        int numberPayments = 12;
+        int numberPayments = 24;
         int monthlyPayment = service.calculate(loanAmount, numberPayments, interestRate);
         System.out.println();
         System.out.println("Monthly Payment= " + monthlyPayment);

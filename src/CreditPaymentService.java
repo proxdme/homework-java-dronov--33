@@ -3,7 +3,7 @@ public class CreditPaymentService {
         double annuityRate;
         int monthPays;
         double intRateMonth;
-        intRateMonth = (interestRate /100) / numberPayments;
+        intRateMonth = (interestRate /100) / 12;
         double a = (1 + intRateMonth);
         double e = numberPayments;
         double result = Math.pow(a,e);
@@ -12,4 +12,6 @@ public class CreditPaymentService {
         return monthPays;
     }
 }
+
+
 
